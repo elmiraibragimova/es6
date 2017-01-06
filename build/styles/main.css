@@ -1,0 +1,47 @@
+html {
+  font-size: calc(10px + 1vw);
+}
+
+body {
+  color: #444;
+}
+
+main {
+	width: 70%;
+	margin: 0 auto;
+	padding-top: 40px;
+}
+
+.table {
+	display: table;
+	width: 100%;
+}
+
+.tr {
+	display: table-row;
+}
+
+.thead {
+	display: table-header-group;
+	font-weight: bold;
+}
+
+.tbody {
+	display: table-row-group;
+}
+
+.th,
+.td {
+	display: table-cell;
+}
+
+.th {
+	padding-bottom: 20px;
+	color: #666;
+	border-bottom: 1px solid #aaa;
+	cursor: pointer;
+}
+
+.td {
+	padding-top: 20px;
+}
