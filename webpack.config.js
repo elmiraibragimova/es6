@@ -19,4 +19,4 @@ module.exports = {
     contentBase: __dirname + '/build',
     hot: true
   }
-}
+};
