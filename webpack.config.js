@@ -1,17 +1,22 @@
+var path = require("path");
 
 module.exports = {
   entry: './src/main.js',
 
   output: {
-    path: __dirname + './build',
-    filename: './js/main.js'
+    path: path.resolve(__dirname, 'build'),
+    publicPath: '/assets/',
+    filename: 'bundle.js'
   },
 
   module: {
     loaders: [{
       test: /\.js$/,
-      include: __dirname + './src',
-      loader: 'babel?preset[]=es2015'
+      include: path.resolve(__dirname, 'src'),
+      loader: 'babel-loader',
+      query: {
+        presets: ['es2015']
+      },
     }]
   },
 
